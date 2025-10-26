@@ -1,0 +1,40 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mri-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mri-system
+  template:
+    metadata:
+      labels:
+        app: mri-system
+    spec:
+      containers:
+      - name: mri-container
+        image: mri-system:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mri-service
+spec:
+  selector:
+    app: mri-system
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: LoadBalancer

@@ -1,0 +1,258 @@
+{
+  "models": {
+    "image_classifier": [
+      {
+        "name": "image_classifier",
+        "version": "1.0",
+        "path": "mri_models\\image_classifier_v1.0.pkl",
+        "timestamp": "2025-10-26T11:23:56.962809",
+        "config": {
+          "field_size": [
+            256,
+            256
+          ],
+          "field_dimension": "TWO_D",
+          "dtype": "<class 'numpy.complex128'>",
+          "learning_rate": 0.1,
+          "adaptive_learning": true,
+          "learning_momentum": 0.9,
+          "learning_decay": 0.99,
+          "evolution_mode": "HYBRID",
+          "evolution_steps": 10,
+          "evolution_dt": 0.01,
+          "diffusion_coefficient": 0.1,
+          "nonlinearity_strength": 0.01,
+          "dispersion_strength": 1.0,
+          "encoding_scheme": "HOLOGRAPHIC",
+          "frequency_bands": 32,
+          "phase_resolution": 64,
+          "enable_holographic_memory": true,
+          "memory_compression": true,
+          "memory_threshold": 1e-06,
+          "max_patterns": 10000,
+          "resonance_threshold": 0.3,
+          "resonance_bandwidth": 0.1,
+          "coupling_strength": 0.5,
+          "use_sparse_representation": true,
+          "use_gpu": false,
+          "num_threads": 4,
+          "batch_processing": true,
+          "enable_quantum_effects": false,
+          "enable_topological_modes": true,
+          "enable_meta_learning": true
+        },
+        "metrics": {
+          "field_statistics": {
+            "energy": 0,
+            "entropy": 0,
+            "amplitude_mean": 0.003463861884878942,
+            "amplitude_std": 0.0018056715938904525,
+            "phase_coherence": 0.0006363709008946836
+          },
+          "patterns_learned": 0,
+          "associations_count": 0,
+          "avg_learning_time": 0,
+          "avg_inference_time": 0,
+          "avg_resonance": 0,
+          "memory_usage_mb": 1.0,
+          "current_learning_rate": 0.1,
+          "topological_defects": 0
+        },
+        "custom_metadata": {
+          "task": "classification"
+        }
+      },
+      {
+        "name": "image_classifier",
+        "version": "1.1",
+        "path": "mri_models\\image_classifier_v1.1.pkl",
+        "timestamp": "2025-10-26T11:25:44.029247",
+        "config": {
+          "field_size": [
+            256,
+            256
+          ],
+          "field_dimension": "TWO_D",
+          "dtype": "<class 'numpy.complex128'>",
+          "learning_rate": 0.1,
+          "adaptive_learning": true,
+          "learning_momentum": 0.9,
+          "learning_decay": 0.99,
+          "evolution_mode": "HYBRID",
+          "evolution_steps": 10,
+          "evolution_dt": 0.01,
+          "diffusion_coefficient": 0.1,
+          "nonlinearity_strength": 0.01,
+          "dispersion_strength": 1.0,
+          "encoding_scheme": "HOLOGRAPHIC",
+          "frequency_bands": 32,
+          "phase_resolution": 64,
+          "enable_holographic_memory": true,
+          "memory_compression": true,
+          "memory_threshold": 1e-06,
+          "max_patterns": 10000,
+          "resonance_threshold": 0.3,
+          "resonance_bandwidth": 0.1,
+          "coupling_strength": 0.5,
+          "use_sparse_representation": true,
+          "use_gpu": false,
+          "num_threads": 4,
+          "batch_processing": true,
+          "enable_quantum_effects": false,
+          "enable_topological_modes": true,
+          "enable_meta_learning": true
+        },
+        "metrics": {
+          "field_statistics": {
+            "energy": 0,
+            "entropy": 0,
+            "amplitude_mean": 0.003461361281889649,
+            "amplitude_std": 0.0018104604769878967,
+            "phase_coherence": 0.0008111464055926187
+          },
+          "patterns_learned": 0,
+          "associations_count": 0,
+          "avg_learning_time": 0,
+          "avg_inference_time": 0,
+          "avg_resonance": 0,
+          "memory_usage_mb": 1.0,
+          "current_learning_rate": 0.1,
+          "topological_defects": 0
+        },
+        "custom_metadata": {
+          "task": "classification"
+        }
+      }
+    ],
+    "production_model": [
+      {
+        "name": "production_model",
+        "version": "1.0",
+        "path": "mri_models\\production_model_v1.0.pkl",
+        "timestamp": "2025-10-26T11:24:42.494231",
+        "config": {
+          "field_size": [
+            256,
+            256
+          ],
+          "field_dimension": "TWO_D",
+          "dtype": "<class 'numpy.complex128'>",
+          "learning_rate": 0.1,
+          "adaptive_learning": true,
+          "learning_momentum": 0.9,
+          "learning_decay": 0.99,
+          "evolution_mode": "HYBRID",
+          "evolution_steps": 10,
+          "evolution_dt": 0.01,
+          "diffusion_coefficient": 0.1,
+          "nonlinearity_strength": 0.01,
+          "dispersion_strength": 1.0,
+          "encoding_scheme": "HOLOGRAPHIC",
+          "frequency_bands": 32,
+          "phase_resolution": 64,
+          "enable_holographic_memory": true,
+          "memory_compression": true,
+          "memory_threshold": 1e-06,
+          "max_patterns": 10000,
+          "resonance_threshold": 0.3,
+          "resonance_bandwidth": 0.1,
+          "coupling_strength": 0.5,
+          "use_sparse_representation": true,
+          "use_gpu": false,
+          "num_threads": 4,
+          "batch_processing": true,
+          "enable_quantum_effects": false,
+          "enable_topological_modes": true,
+          "enable_meta_learning": true
+        },
+        "metrics": {
+          "field_statistics": {
+            "energy": 0,
+            "entropy": 0,
+            "amplitude_mean": 9.60981131079909e-05,
+            "amplitude_std": 0.0039050677606357973,
+            "phase_coherence": 0.00047390939709336834
+          },
+          "patterns_learned": 0,
+          "associations_count": 0,
+          "avg_learning_time": 0.056248950958251956,
+          "avg_inference_time": 0,
+          "avg_resonance": 0,
+          "memory_usage_mb": 1.0,
+          "current_learning_rate": 0.09,
+          "topological_defects": 0
+        },
+        "custom_metadata": {
+          "purpose": "pattern recognition",
+          "stage": "production"
+        }
+      },
+      {
+        "name": "production_model",
+        "version": "1.1",
+        "path": "mri_models\\production_model_v1.1.pkl",
+        "timestamp": "2025-10-26T11:26:29.722629",
+        "config": {
+          "field_size": [
+            256,
+            256
+          ],
+          "field_dimension": "TWO_D",
+          "dtype": "<class 'numpy.complex128'>",
+          "learning_rate": 0.1,
+          "adaptive_learning": true,
+          "learning_momentum": 0.9,
+          "learning_decay": 0.99,
+          "evolution_mode": "HYBRID",
+          "evolution_steps": 10,
+          "evolution_dt": 0.01,
+          "diffusion_coefficient": 0.1,
+          "nonlinearity_strength": 0.01,
+          "dispersion_strength": 1.0,
+          "encoding_scheme": "HOLOGRAPHIC",
+          "frequency_bands": 32,
+          "phase_resolution": 64,
+          "enable_holographic_memory": true,
+          "memory_compression": true,
+          "memory_threshold": 1e-06,
+          "max_patterns": 10000,
+          "resonance_threshold": 0.3,
+          "resonance_bandwidth": 0.1,
+          "coupling_strength": 0.5,
+          "use_sparse_representation": true,
+          "use_gpu": false,
+          "num_threads": 4,
+          "batch_processing": true,
+          "enable_quantum_effects": false,
+          "enable_topological_modes": true,
+          "enable_meta_learning": true
+        },
+        "metrics": {
+          "field_statistics": {
+            "energy": 0,
+            "entropy": 0,
+            "amplitude_mean": 9.609811310798923e-05,
+            "amplitude_std": 0.003905067760635798,
+            "phase_coherence": 0.00047390939560209986
+          },
+          "patterns_learned": 0,
+          "associations_count": 0,
+          "avg_learning_time": 0.05937552452087402,
+          "avg_inference_time": 0,
+          "avg_resonance": 0,
+          "memory_usage_mb": 1.0,
+          "current_learning_rate": 0.09,
+          "topological_defects": 0
+        },
+        "custom_metadata": {
+          "purpose": "pattern recognition",
+          "stage": "production"
+        }
+      }
+    ]
+  },
+  "versions": {
+    "image_classifier": "1.1",
+    "production_model": "1.1"
+  }
+}
