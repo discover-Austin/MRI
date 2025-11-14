@@ -1,3 +1,37 @@
-
+# Core dependencies
 numpy>=1.21.0
 scipy>=1.7.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Visualization
+matplotlib>=3.5.0
+plotly>=5.0.0
+seaborn>=0.12.0
+
+# Machine Learning (optional - for benchmarking)
+scikit-learn>=1.0.0
+torch>=1.12.0  # Optional - for PyTorch integration
+tensorflow>=2.9.0  # Optional - for TensorFlow benchmarks
+
+# Web frameworks (optional - for dashboard/API)
+flask>=2.0.0  # For REST API
+dash>=2.6.0  # For interactive dashboard
+fastapi>=0.85.0  # Alternative API framework
+uvicorn>=0.18.0  # ASGI server
+
+# GPU acceleration (optional)
+cupy-cuda11x>=10.0.0  # For CUDA GPU support (optional)
+
+# Additional utilities
+pillow>=9.0.0  # Image processing
+h5py>=3.7.0  # For HDF5 file handling
+tqdm>=4.64.0  # Progress bars
+
+# Development tools
+black>=22.0.0  # Code formatting
+flake8>=4.0.0  # Linting
+mypy>=0.971  # Type checking
+jupyter>=1.0.0  # Notebooks
